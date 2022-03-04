@@ -2,21 +2,21 @@
 <html lang="en" class="no-js">
   <head>
 <!--========== pt PWA start==========-->
-<meta name="theme-color" content="#0f1117">
+<meta name="theme-color" content="#fff">
 <link rel="manifest" href="manifest.json" crossorigin="use-credentials"/>
-<link rel="apple-touch-icon" href="./images/logo-512.png">
+<link rel="apple-touch-icon" href="./images/todo-logo-512.png">
 <meta charset="UTF-8">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-touch-fullscreen" content="yes" />
-<link rel="icon" type="image/png" sizes="32x32" href="./images/logo-512.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="./images/logo-512.png" />
-<link rel="icon" type="image/x-icon" href="./images/logo-512.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="./images/todo-logo-192.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="./images/todo-logo-192.png" />
+<link rel="icon" type="image/x-icon" href="./images/transparent-todo-logo-500px .png" />
 
 <script type="module">
     document.documentElement.classList.remove('no-js');
@@ -30,15 +30,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   
-  <body class="bg-shape">
+  <body >
     
-    <span class="decor">
-      
-  </span>
-    
-    
-
-    <h1 class="title">ToDoList</h1>
+    <img src="./images/transparent-todo-logo-500px .png" alt="logo" width="192px" >
+    <div class="title">
+   
+    </div>
 
     <div class="container">
       <input class="todo-box" id="todo-title" type="text" />
@@ -46,9 +43,13 @@
       <button class="addbutton" onclick="addTodo()">Add Todo</button>
       <div class="lista" id="todo-list"></div>
       
+      
     </div>
-    <h3>by Valentin E.</h3>
+
+   
+    
     <script src="./src/main.js"></script>
     <script src="./src/index.js"></script>
   </body>
+  
 </html>
