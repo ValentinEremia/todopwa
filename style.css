@@ -17,7 +17,7 @@ body {
   
   
   border-radius: 10px;
-  width: 70vw;
+  width: 100%;
   height: max-content;
   color: rgb(221, 221, 221);
   background-color: rgb(90, 120, 209);
@@ -96,7 +96,7 @@ button {
   position: absolute;
   margin: auto;
   justify-content: center;
-  width: 95%;
+  width: 40vw;
   align-items: center;
   
   
@@ -131,6 +131,33 @@ img {
   
 } */
 
+@media only screen and (max-width: 1074px){
+
+  .c__boss{
+   
+    width: 50vw;
+  
+  }
+
+}
+@media only screen and (max-width: 860px){
+
+  .c__boss{
+   
+    width: 60vw;
+  
+  }
+
+}
+@media only screen and (max-width: 714px){
+
+  .c__boss{
+   
+    width: 75vw;
+  
+  }
+
+}
 @media only screen and (max-width: 669px) {
   html {
     font-size: 14px;
@@ -144,12 +171,18 @@ img {
     display: flex;
     flex-direction: column;
   }
-
-  /* img {
-    margin-top:-2rem;
-    margin-bottom: -2rem;
+  .c__boss{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    width: 80vw;
+    align-items: center;
     
-} */
+    
+  }
+
 
 
   .todo-box,
