@@ -8,23 +8,25 @@ body {
 
   display: flex;
   color: rgb(71, 71, 71);
-  background-color: rgb(195, 199, 206);
+  background-color: #121213;
   justify-content: center;
 }
 
 .container {
-  position: absolute;
-  top: 20vh;
+  
+  
+  
   border-radius: 10px;
   width: 70vw;
   height: max-content;
   color: rgb(221, 221, 221);
   background-color: rgb(90, 120, 209);
   display: grid;
-  grid-template-columns: 4fr 4fr 2fr;
+  
   column-gap: 0.5rem;
   padding: 1rem 0.5rem;
   box-shadow: 2px 2px 10px black;
+  
 }
 /* .container:before {
   content:'';
@@ -87,11 +89,25 @@ button {
   border-radius: 10px;
   
 } */
-img {
-  position: relative;
-  margin-top: 8vh;
-  width: 11rem;
 
+.c__boss{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: auto;
+  justify-content: center;
+  width: 95%;
+  align-items: center;
+  
+  
+}
+
+img {
+  
+ 
+  margin-top: 15vh;
+  width: 11rem;
+  
   justify-content: center;
 }
 
@@ -119,14 +135,23 @@ img {
   html {
     font-size: 14px;
   }
+
   .container {
-    margin-top: 4vh;
+    
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     display: flex;
     flex-direction: column;
   }
+
+  /* img {
+    margin-top:-2rem;
+    margin-bottom: -2rem;
+    
+} */
+
+
   .todo-box,
   .data-box {
     width: 90%;
@@ -145,4 +170,13 @@ img {
  
 
 
+}
+
+@media only screen and (max-height:480px) {
+  img {
+    margin-top:-2rem;
+    margin-bottom: -2rem;
+    
+  }
+  
 }
