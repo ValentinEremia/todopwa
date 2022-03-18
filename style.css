@@ -21,33 +21,26 @@ body {
   height: max-content;
   color: rgb(221, 221, 221);
   background-color: rgb(90, 120, 209);
-  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
   
   column-gap: 0.5rem;
   padding: 1rem 0.5rem;
   box-shadow: 2px 2px 10px black;
   
 }
-/* .container:before {
-  content:'';
-  position: absolute;
-  
-  top:75%;
-  height: 2rem;
-  padding: 0; margin: 0;
-  transform: skew(49deg, 293deg);
-  background: linear-gradient(to left, royalblue, rgb(82, 245, 158));
-  z-index: -1;
-  width: 223%;
-} */
+
 .lista {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  grid-column: 1/4;
+  
 
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   gap: 0.4rem;
   width: 100%;
@@ -58,12 +51,19 @@ body {
 }
 .todo-box,
 .data-box {
-  border-radius: 5px;
-  padding-left: 0.4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+   
+    width: 80%;
+    height: fit-content;
+    gap: .5rem;
+    margin: auto;
+  border-radius: 5px;
+  padding:0.2rem  0.5rem;
+  
+  justify-content: center; 
+   align-items: center; 
   font-weight: 600;
+  font-size: 1.3rem;
   color: rgb(0, 0, 0);
   background-color: rgb(230, 230, 230);
   border: 1px rgb(53, 89, 195);
@@ -71,65 +71,41 @@ body {
 button {
   border-radius: 6px;
   margin-left: 0.7rem;
-
+  font-size: 1.2rem;
   color: rgb(226, 226, 226);
   background-color: rgb(46, 85, 200);
-  padding: 0.3rem 0.6rem;
+  padding: 0.35rem 1rem;
   border: 1px rgb(50, 62, 97);
   align-items: center;
 
-  font-weight: 600;
+  
 }
-/* .title{
-  position: absolute;
-  display: flex;
-  width: 50vw;
-  margin-top:10%;
-  
-  border-radius: 10px;
-  
-} */
+
 
 .c__boss{
   display: flex;
   flex-direction: column;
-  position: absolute;
-  margin: auto;
-  justify-content: center;
-  width: 40vw;
-  align-items: center;
   
+  margin: auto;
+  gap: 1rem;
+  width: 35vw;
+  align-items: center;
+ 
+    position: absolute;
+    
   
 }
 
 img {
   
  
-  margin-top: 15vh;
-  width: 11rem;
+  
+  width: 7rem;
   
   justify-content: center;
 }
 
-/* 
-.bg-shape {
-  position: relative;
-  overflow: hidden;
-  padding: 50px;
-}
 
-.bg-shape:after {
-  content: '';
-  position: absolute;
-  width: 110%;
-  height: 3rem;
-  background: linear-gradient(to right, rgb(44, 240, 86) , rgb(31, 95, 243),rgb(39, 18, 233));
-  transform: skew(1deg, 45deg);
-  top: 20rem;
-  right: 20;
-  z-index: -1;
-  
-} */
 
 @media only screen and (max-width: 1074px){
 
@@ -159,9 +135,7 @@ img {
 
 }
 @media only screen and (max-width: 669px) {
-  html {
-    font-size: 14px;
-  }
+ 
 
   .container {
     
@@ -175,8 +149,9 @@ img {
     display: flex;
     flex-direction: column;
     position: absolute;
+    gap: .5rem;
     margin: auto;
-    justify-content: center;
+   
     width: 80vw;
     align-items: center;
     
@@ -188,11 +163,10 @@ img {
   .todo-box,
   .data-box {
     width: 90%;
-    height: 1.6rem;
+   
     margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: start;
+   
   }
   .addbutton {
     align-items: center;
@@ -200,15 +174,14 @@ img {
     width: 93%;
   }
 
- 
 
 
 }
 
 @media only screen and (max-height:480px) {
   img {
-    margin-top:-2rem;
-    margin-bottom: -2rem;
+    margin-top:-1rem;
+    margin-bottom: -1.5rem;
     
   }
   

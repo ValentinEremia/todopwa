@@ -9,11 +9,9 @@
       if (Array.isArray(savedTodos)) {
         todos = savedTodos;
       } else {
-        todos = [{
-          title: 'spala masina',
-          dueDate: '2022-02-03',
-          id: 'id1'
-        }];
+       
+        todos = [];
+        id = 0;
       }
 
       // Creates a todo
